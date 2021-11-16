@@ -19,7 +19,7 @@ export const NavList = styled.li`
   }
 `
 export const NavLink = styled.a`
-  color: #fff;
+  color: #000;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 14px;
