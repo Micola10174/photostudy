@@ -1,8 +1,16 @@
 import styled from 'styled-components'
 
 export const SliderWrapper = styled.div`
-  height: calc(100% - 79px);
-  background-color: #999;
+  .slick-slider {
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  .slick-slide {
+    & > div {
+      margin-right: 20px;
+    }
+  }
 
   .slick-next {
     right: 20px;
@@ -33,8 +41,25 @@ export const SliderWrapper = styled.div`
     background: rgba(0, 0, 0, 0.5);
   }
 `
-export const SliderItem = styled.div``
-export const SliderImg = styled.img``
+export const SliderItem = styled.div`
+  background-color: lightgray;
+  text-align: center;
+`
+export const SliderTitleWrapper = styled.div`
+  padding: 25px 0 22px;
+`
+export const SliderTitle = styled.h4`
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: #111111;
+  transition: all 0.3s;
+`
+export const SliderSubTitle = styled.span``
+export const SliderImg = styled.img`
+  height: 360px;
+  width: 100%;
+  object-fit: cover;
+`
 export const ArrowNext = styled.div`
   background: rgba(0, 0, 0, 0.5);
   width: 50px;
