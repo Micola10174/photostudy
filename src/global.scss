@@ -1,8 +1,7 @@
-
 @font-face {
   font-family: "RobotoRegular";
   src: url("./assets/fonts/Roboto/Roboto-Regular.ttf") format("ttf"),
-       url("./assets/fonts/Roboto/Roboto-Regular.ttf") format("opentype");
+  url("./assets/fonts/Roboto/Roboto-Regular.ttf") format("opentype");
 }
 
 @font-face {
@@ -23,19 +22,24 @@
   url("./assets/fonts/Roboto/Roboto-Black.ttf") format("opentype");
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
+body {
   height: 100%;
   font-family: "RobotoRegular", sans-serif;
   font-size: 16px;
+  background-color: #f2f2f2;
 }
 
-.container-fluid{
+.container-fluid {
   margin-left: auto;
   margin-right: auto;
+}
+
+h3 {
+  font-family: 'RobotoBold', sans-serif;
 }
