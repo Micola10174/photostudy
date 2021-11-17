@@ -1,8 +1,13 @@
 import React from 'react'
 import { Header } from './index.styled'
 import Navigation from './Navigation'
+import Carousel from './Carousel'
 import { Row } from '../../style/global'
 import { HeaderSection } from './Navigation/index.styled'
+
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
+
 
 const Head = () => {
   return (
@@ -14,6 +19,7 @@ const Head = () => {
           </Row>
         </HeaderSection>
       </div>
+      <Carousel />
     </Header>
   )
 }
