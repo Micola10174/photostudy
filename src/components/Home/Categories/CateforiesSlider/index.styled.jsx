@@ -42,7 +42,7 @@ export const SliderWrapper = styled.div`
   }
 `
 export const SliderItem = styled.div`
-  background-color: lightgray;
+  background-color: #fff;
   text-align: center;
 `
 export const SliderTitleWrapper = styled.div`

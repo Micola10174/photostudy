@@ -42,8 +42,8 @@ const CategoriesSlider = () => {
         },
       },
     ],
-    nextArrow: <SampleNextArrow className="test" />,
-    prevArrow: <SamplePrevArrow className="test" />,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
   }
   return (
     <SliderWrapper>

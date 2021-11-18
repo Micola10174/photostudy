@@ -26,7 +26,4 @@ export const ServicesTitle = styled.h3`
 
 export const ServicesDescription = styled.p`
   color: #666666;
-  font-size: 15px;
-  line-height: 26px;
-  margin: 0 0 15px 0;
 `
