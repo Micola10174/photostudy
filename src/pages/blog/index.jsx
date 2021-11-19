@@ -1,8 +1,9 @@
 import React from 'react'
-import About from "../../components/About"
+import Blog from "../../components/Blog"
 
-const AboutPage = () => {
-    return <About />
+
+const BlogPage = () => {
+    return <Blog />
 }
 
-export default AboutPage
+export default BlogPage

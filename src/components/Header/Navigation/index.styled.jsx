@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import {NavLink} from "react-router-dom"
 
 export const Nav = styled.nav`
   width: 100%;
@@ -24,7 +25,7 @@ export const NavList = styled.li`
     margin-left: 0;
   }
 `
-export const NavLink = styled.a`
+export const NavItem = styled(NavLink)`
   color: #000;
   text-decoration: none;
   text-transform: uppercase;
@@ -48,6 +49,12 @@ export const NavLink = styled.a`
   }
 
   &:hover {
+    &:after {
+      opacity: 1;
+    }
+  }
+  
+  &.active{
     &:after {
       opacity: 1;
     }

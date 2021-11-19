@@ -1,8 +1,8 @@
 import React from 'react'
-import About from "../../components/About"
+import Pricing from "../../components/Pricing"
 
-const AboutPage = () => {
-    return <About />
+const PricingPage = () => {
+    return <Pricing />
 }
 
-export default AboutPage
+export default PricingPage

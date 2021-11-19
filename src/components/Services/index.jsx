@@ -1,7 +1,8 @@
 import React from "react"
+import Developing from "../ServiceJobComponent/Developing"
 
-const Contact = () => {
-    return <h1>Contact</h1>
+const Services = () => {
+    return <Developing page="Сервисы"/>
 }
 
-export default Contact
+export default Services

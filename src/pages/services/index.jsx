@@ -1,8 +1,8 @@
 import React from 'react'
-import About from "../../components/About"
+import Services from "../../components/Services"
 
-const AboutPage = () => {
-    return <About />
+const ServicesPage = () => {
+    return <Services />
 }
 
-export default AboutPage
+export default ServicesPage

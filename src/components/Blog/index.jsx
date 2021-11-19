@@ -1,7 +1,8 @@
 import React from "react"
+import Developing from "../ServiceJobComponent/Developing"
 
-const About = () => {
-    return <h1>About</h1>
+const Blog = () => {
+    return <Developing page="Блог"/>
 }
 
-export default About
+export default Blog

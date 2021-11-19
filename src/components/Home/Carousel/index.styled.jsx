@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const SliderWrapper = styled.div`
-  height: calc(100% - 79px);
+  height: calc(100vh - 79px);
   background-color: #999;
 
   .slick-next {

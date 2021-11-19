@@ -1,8 +1,8 @@
 import React from 'react'
-import About from "../../components/About"
+import Portfolio from "../../components/Portfolio"
 
-const AboutPage = () => {
-    return <About />
+const PortfolioPage = () => {
+    return <Portfolio />
 }
 
-export default AboutPage
+export default PortfolioPage

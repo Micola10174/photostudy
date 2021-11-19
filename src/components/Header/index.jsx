@@ -1,7 +1,6 @@
 import React from 'react'
 import { Header } from './index.styled'
 import Navigation from './Navigation'
-import Carousel from './Carousel'
 import { Row } from '../../style/global'
 import { HeaderSection } from './Navigation/index.styled'
 
@@ -19,7 +18,6 @@ const Head = () => {
           </Row>
         </HeaderSection>
       </div>
-      <Carousel />
     </Header>
   )
 }
