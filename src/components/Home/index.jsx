@@ -1,18 +1,22 @@
 import React from 'react'
-import { Container, Section } from '../../style/global'
+import { Section } from '../../style/global'
 import Services from './Services'
 import Categories from './Categories'
+import Portfolio from './Portfolio'
 
 const Home = () => {
   return (
-    <Container>
+    <div>
       <Section>
         <Services />
       </Section>
       <Section>
         <Categories />
       </Section>
-    </Container>
+      <Section>
+        <Portfolio />
+      </Section>
+    </div>
   )
 }
 

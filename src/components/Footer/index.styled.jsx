@@ -40,13 +40,6 @@ export const WidgetGrid = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
 
-  ul {
-    list-style: none;
-  }
-
-  li {
-  }
-
   a {
     text-decoration: none;
     font-size: 15px;
