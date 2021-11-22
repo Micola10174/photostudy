@@ -1,11 +1,12 @@
 import styled from 'styled-components'
+import { colors } from '../../../style/colors'
 
 export const PortfolioWrapper = styled.div``
 export const PortfolioTitle = styled.h2`
   margin-bottom: 22px;
   text-align: center;
   text-transform: uppercase;
-  color: #111111;
+  color: ${colors.colorBlack2};
 `
 export const PortfolioFilterButtons = styled.div`
   text-align: center;
@@ -22,7 +23,7 @@ export const PortfolioFilterItem = styled.li`
   cursor: pointer;
 
   &.active {
-    color: #009603;
+    color: ${colors.colorGreen};
   }
 
   &:after {
@@ -47,7 +48,7 @@ export const PortfolioFilter = styled.div`
 
   img {
     object-fit: cover;
-    &:before{
+    &:before {
       content: '';
       display: block;
       width: 100%;

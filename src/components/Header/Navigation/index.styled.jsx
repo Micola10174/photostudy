@@ -1,5 +1,6 @@
 import styled from 'styled-components'
-import {NavLink} from "react-router-dom"
+import { NavLink } from 'react-router-dom'
+import { colors } from '../../../style/colors'
 
 export const Nav = styled.nav`
   width: 100%;
@@ -10,10 +11,10 @@ export const Nav = styled.nav`
 export const NavWrapper = styled.ul`
   display: flex;
   list-style: none;
-  @media only screen and (min-width: 768px) and (max-width: 991px){
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
     display: none;
   }
-  @media only screen and (max-width: 767px){
+  @media only screen and (max-width: 767px) {
     display: none;
   }
 `
@@ -40,7 +41,7 @@ export const NavItem = styled(NavLink)`
     bottom: 0;
     height: 3px;
     width: 100%;
-    background: #009603;
+    background: ${colors.colorGreen};
     content: '';
     opacity: 0;
     -webkit-transition: all 0.3s;
@@ -53,8 +54,8 @@ export const NavItem = styled(NavLink)`
       opacity: 1;
     }
   }
-  
-  &.active{
+
+  &.active {
     &:after {
       opacity: 1;
     }
@@ -65,7 +66,7 @@ export const NavLogo = styled.div`
   width: 50px;
   display: flex;
   margin-right: 150px;
-  @media only screen and (min-width: 992px) and (max-width: 1199px){
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
     margin-right: 20px;
   }
 `
@@ -76,7 +77,7 @@ export const Logo = styled.img`
 `
 
 export const HeaderSection = styled.div`
-  @media only screen and (min-width: 1430px){
+  @media only screen and (min-width: 1430px) {
     padding-left: 85px;
     padding-right: 85px;
   }
@@ -85,7 +86,7 @@ export const HeaderSection = styled.div`
 export const Search = styled.div`
   height: 50px;
   width: 50px;
-  background: #009603;
+  background: ${colors.colorGreen};
   line-height: 50px;
   text-align: center;
   cursor: pointer;

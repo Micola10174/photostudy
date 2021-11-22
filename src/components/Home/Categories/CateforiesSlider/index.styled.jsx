@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { colors } from '../../../../style/colors'
 
 export const SliderWrapper = styled.div`
   .slick-slider {
@@ -51,7 +52,7 @@ export const SliderTitleWrapper = styled.div`
 export const SliderTitle = styled.h4`
   text-transform: uppercase;
   margin-bottom: 10px;
-  color: #111111;
+  color: ${colors.colorBlack2};
   transition: all 0.3s;
 `
 export const SliderSubTitle = styled.span``

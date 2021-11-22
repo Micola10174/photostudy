@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { colors } from '../../../style/colors'
 
 export const ServicesWrapper = styled.div`
   display: grid;
@@ -20,10 +21,10 @@ export const ServicesImg = styled.img`
 
 export const ServicesTitle = styled.h3`
   margin-bottom: 10px;
-  color: #191039;
+  color: ${colors.colorBlack};
   text-transform: uppercase;
 `
 
 export const ServicesDescription = styled.p`
-  color: #666666;
+  color: ${colors.colorGray}; ;
 `

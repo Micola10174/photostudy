@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { colors } from '../../style/colors'
 
 export const Footer = styled.footer`
   background: #000606;
@@ -74,13 +75,13 @@ export const SubscribeInput = styled.input`
   font-size: 15px;
   color: #c4c4c4;
   padding-left: 20px;
-  border: 1px solid #009603;
+  border: 1px solid ${colors.colorGreen};
   background: transparent;
   outline: none;
 `
 export const SubscribeButtonSubmit = styled.button`
   color: #ffffff;
-  background: #009603;
+  background: ${colors.colorGreen};
   height: 50px;
   width: 50px;
   border: none;
