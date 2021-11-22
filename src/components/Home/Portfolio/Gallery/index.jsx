@@ -1,5 +1,7 @@
-import React from "react"
-import Gallery from "react-photo-gallery"
+import React from 'react'
+import Masony from 'react-masonry-component'
+import PropTypes from 'prop-types'
+import { ImageList, ImageItem, Image } from './index.styled'
 import galleryImg1 from '../../../../assets/images/gallery/gallery1.jpg'
 import galleryImg2 from '../../../../assets/images/gallery/gallery2.jpg'
 import galleryImg3 from '../../../../assets/images/gallery/gallery3.jpg'
@@ -10,58 +12,37 @@ import galleryImg7 from '../../../../assets/images/gallery/gallery7.jpg'
 import galleryImg8 from '../../../../assets/images/gallery/gallery8.jpg'
 import galleryImg9 from '../../../../assets/images/gallery/gallery9.jpg'
 
+const GalleryComponent = ({ imagesData }) => {
+  const masonryOptions = {
+    fitWidth: false,
+    columnWidth: 300,
+    // gutter: 30,
+    itemSelector: '.photo-item',
+  }
 
-const GalleryComponent = () => {
+  console.log(imagesData)
 
-    const photos = [
-        {
-            src: galleryImg1,
-            width: 4,
-            height: 3,
-        },
-        {
-            src: galleryImg2,
-            width: 2,
-            height: 1
-        },
-        {
-            src: galleryImg3,
-            width: 1,
-            height: 1
-        },
-        {
-            src: galleryImg4,
-            width: 1,
-            height: 1
-        },
-        {
-            src: galleryImg5,
-            width: 2,
-            height: 2
-        },
-        {
-            src: galleryImg6,
-            width: 4,
-            height: 3
-        },
-        {
-            src: galleryImg7,
-            width: 2,
-            height: 2
-        },
-        {
-            src: galleryImg8,
-            width: 2,
-            height: 1
-        },
-        {
-            src: galleryImg9,
-            width: 4,
-            height: 3
-        }
-    ]
-
-    return <Gallery photos={photos} direction={"row"}/>
+  return (
+    <Masony
+      className={'photo-list'}
+      elementType={ImageList}
+      options={masonryOptions}
+      disableImagesLoaded={false}
+      updateOnEachImageLoad={false}
+    >
+      {imagesData &&
+        imagesData.map((image, index) => {
+          return (
+            <ImageItem key={index} className="photo-item">
+              <Image src={image.urls.regular} />
+            </ImageItem>
+          )
+        })}
+    </Masony>
+  )
 }
 
+GalleryComponent.propTypes = {
+  imagesData: PropTypes.array,
+}
 export default GalleryComponent

@@ -43,21 +43,7 @@ export const PortfolioFilterItem = styled.li`
   }
 `
 export const BlockRow = styled.div``
-export const PortfolioFilter = styled.div`
-  position: relative;
-
-  img {
-    object-fit: cover;
-    &:before {
-      content: '';
-      display: block;
-      width: 100%;
-      height: 100%;
-      background-color: rgb(0, 0, 0);
-      z-index: 999;
-    }
-  }
-`
+export const PortfolioFilter = styled.div``
 
 export const ButtonWrapper = styled.div`
   text-align: center;
